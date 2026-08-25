@@ -68,7 +68,6 @@ export const DynamicLightingArtifact: React.FC<DynamicLightingArtifactProps> = (
     const x = e.clientX - rect.left;
     const y = e.clientY - rect.top;
     
-    // Normalized to range [-1, 1]
     const normX = ((x / rect.width) * 2) - 1;
     const normY = ((y / rect.height) * 2) - 1;
 
@@ -86,12 +85,39 @@ export const DynamicLightingArtifact: React.FC<DynamicLightingArtifactProps> = (
     mouseY.set(0);
   }, [mouseX, mouseY]);
 
+  const handleTouchMove = useCallback((e: React.TouchEvent<HTMLDivElement>) => {
+    if (!containerRef.current || e.touches.length === 0) return;
+    const rect = containerRef.current.getBoundingClientRect();
+    const touch = e.touches[0];
+    const x = touch.clientX - rect.left;
+    const y = touch.clientY - rect.top;
+
+    const normX = ((x / rect.width) * 2) - 1;
+    const normY = ((y / rect.height) * 2) - 1;
+
+    mouseX.set(normX);
+    mouseY.set(normY);
+  }, [mouseX, mouseY]);
+
+  const handleTouchStart = useCallback(() => {
+    setIsHovered(true);
+  }, []);
+
+  const handleTouchEnd = useCallback(() => {
+    setIsHovered(false);
+    mouseX.set(0);
+    mouseY.set(0);
+  }, [mouseX, mouseY]);
+
   return (
     <div
       ref={containerRef}
       onMouseMove={handleMouseMove}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
+      onTouchStart={handleTouchStart}
+      onTouchMove={handleTouchMove}
+      onTouchEnd={handleTouchEnd}
       className={`relative w-full ${aspectRatio} flex items-center justify-center cursor-pointer select-none ${className}`}
       style={{ perspective: 1000 }}
     >
