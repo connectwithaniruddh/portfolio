@@ -72,7 +72,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
             <div className="w-full max-w-sm bg-[#EFECE6] rounded-xl border border-[#D1D1CB] p-5 space-y-4 shadow-xs">
               <div className="relative aspect-[4/5] rounded-lg overflow-hidden border border-[#DCD9D1] bg-[#E2DFD8]">
                 <img
-                  src="/aniruddh-profile.jpg"
+                  src="./aniruddh-profile.jpg"
                   alt="Aniruddh Paralikar - AI Transformation Program Leader"
                   className="w-full h-full object-cover opacity-95"
                   loading="eager"
@@ -91,8 +91,8 @@ export const HomeView: React.FC<HomeViewProps> = ({
                   "AI transformation leader with 16+ years translating business strategy into governed multi-agent systems, Microsoft Foundry solutions, and scalable CoE operating models."
                 </p>
                 <a
-                  href="/Aniruddh_Paralikar_CV.docx"
-                  download="Aniruddh_Paralikar_AI_Transformation_CoE.docx"
+                  href="./Aniruddh Paralikar - AI Transformation CoE.docx"
+                  download="Aniruddh Paralikar - AI Transformation CoE.docx"
                   className="w-full py-2.5 px-3 rounded text-xs font-mono bg-[#B3402E] hover:bg-[#963323] text-[#F9F7F2] transition-colors flex items-center justify-center gap-2 shadow-xs font-medium uppercase tracking-wider"
                 >
                   <FileText className="w-4 h-4" />

@@ -111,8 +111,8 @@ export const Footer: React.FC<FooterProps> = ({ setActiveTab, onOpenConnect }) =
               <ul className="space-y-1.5 text-xs font-mono uppercase tracking-wider">
                 <li>
                   <a
-                    href="/Aniruddh_Paralikar_CV.docx"
-                    download="Aniruddh_Paralikar_AI_Transformation_CoE.docx"
+                    href="./Aniruddh Paralikar - AI Transformation CoE.docx"
+                    download="Aniruddh Paralikar - AI Transformation CoE.docx"
                     className="text-[#B3402E] hover:text-[#f5dcd8] transition-colors font-semibold"
                   >
                     DOWNLOAD CV
