@@ -125,12 +125,12 @@ export const DynamicLightingArtifact: React.FC<DynamicLightingArtifactProps> = (
       <motion.div
         className="absolute bottom-4 left-1/2 -translate-x-1/2 w-3/5 h-6 rounded-full pointer-events-none"
         style={{
-          background: 'radial-gradient(ellipse at center, rgba(179, 64, 46, 0.28) 0%, rgba(26, 29, 27, 0.18) 45%, transparent 75%)',
+          background: 'radial-gradient(ellipse at center, rgba(179, 64, 46, 0.32) 0%, rgba(26, 29, 27, 0.22) 40%, transparent 70%)',
           x: shadowX,
           y: shadowY,
           scale: shadowScale,
-          filter: 'blur(10px)',
-          opacity: isHovered ? 0.9 : 0.5
+          filter: 'blur(5px)',
+          opacity: isHovered ? 0.95 : 0.65
         }}
         transition={{ duration: 0.2 }}
       />
@@ -155,8 +155,8 @@ export const DynamicLightingArtifact: React.FC<DynamicLightingArtifactProps> = (
           className="relative w-full h-full flex items-center justify-center"
           style={{
             filter: isHovered 
-              ? 'drop-shadow(0 16px 28px rgba(179, 64, 46, 0.22)) drop-shadow(0 6px 12px rgba(26, 29, 27, 0.16))'
-              : 'drop-shadow(0 8px 18px rgba(26, 29, 27, 0.10))'
+              ? 'drop-shadow(0 10px 20px rgba(179, 64, 46, 0.32)) drop-shadow(0 4px 10px rgba(26, 29, 27, 0.28))'
+              : 'drop-shadow(0 5px 12px rgba(26, 29, 27, 0.20))'
           }}
         >
           <img
@@ -167,15 +167,15 @@ export const DynamicLightingArtifact: React.FC<DynamicLightingArtifactProps> = (
             loading="lazy"
           />
 
-          {/* Dynamic Facet Specular Glare (Glinting across the origami planes) */}
+          {/* Dynamic Facet Specular Glare (Sharper glint across the origami planes) */}
           <motion.div
             className="absolute inset-0 pointer-events-none rounded-xl mix-blend-overlay transition-opacity duration-200"
             style={{
               background: useTransform(
                 [lightPercentX, lightPercentY],
-                ([x, y]) => `radial-gradient(circle 180px at ${x}% ${y}%, rgba(255, 255, 255, 0.7) 0%, rgba(255, 240, 230, 0.2) 50%, transparent 80%)`
+                ([x, y]) => `radial-gradient(circle 130px at ${x}% ${y}%, rgba(255, 255, 255, 0.92) 0%, rgba(255, 240, 230, 0.3) 40%, transparent 70%)`
               ),
-              opacity: isHovered ? 0.85 : 0
+              opacity: isHovered ? 0.95 : 0
             }}
           />
 
@@ -185,9 +185,9 @@ export const DynamicLightingArtifact: React.FC<DynamicLightingArtifactProps> = (
             style={{
               background: useTransform(
                 [lightPercentX, lightPercentY],
-                ([x, y]) => `linear-gradient(${Math.atan2(Number(y) - 50, Number(x) - 50) * (180 / Math.PI) + 90}deg, rgba(255, 255, 255, 0.3) 0%, transparent 60%)`
+                ([x, y]) => `linear-gradient(${Math.atan2(Number(y) - 50, Number(x) - 50) * (180 / Math.PI) + 90}deg, rgba(255, 255, 255, 0.45) 0%, transparent 50%)`
               ),
-              opacity: isHovered ? 0.55 : 0
+              opacity: isHovered ? 0.70 : 0
             }}
           />
         </motion.div>
