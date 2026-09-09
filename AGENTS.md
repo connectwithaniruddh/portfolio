@@ -20,7 +20,7 @@ This document serves as the authoritative knowledge base and workspace guideline
 3. **Motion & 3D Interactive Lighting**: Framer Motion (`motion/react`) driving physics-based spring rotation, directional specular glints, dynamic rim highlights, and ambient occlusion ground shadows (`src/components/DynamicLightingArtifact.tsx`).
 4. **Vector Asset System**:
    - 18 Tier-Categorized Flagship Case Studies with custom 3D Low-Poly Animal SVG artwork (`src/data/animalData.ts`).
-   - 5 Career Era Watercolor Artworks stored locally in `public/` (`public/journey-foundations.jpg`, `public/journey-capability.jpg`, `public/journey-platforms.jpg`, `public/journey-leadership.jpg`, `public/journey-horizon.jpg`).
+   - 5 Career Era Watercolor Artworks stored locally in `public/` (`public/journey-era1.png`, `public/journey-era2.png`, `public/journey-era3.png`, `public/journey-era4.png`, `public/journey-era5.png`).
 5. **Core Data Store**: `src/data/portfolioData.ts` (18 Flagship Case Studies, 5 Journey Eras, 4 Architectural Decision Records).
 
 ---
@@ -38,8 +38,8 @@ This document serves as the authoritative knowledge base and workspace guideline
 ### 2. Static Asset Hosting & GitHub Pages Compatibility
 - **The Problem**: Temporal external URLs (such as Google AIDA `lh3.googleusercontent.com/aida/...` URLs) return HTTP 403 Forbidden or expire over time. Absolute paths (`/image.jpg`) break when deployed to GitHub Pages subpath URLs (`https://user.github.io/portfolio/`).
 - **The Solution**:
-  - Move ALL images, CV documents, and artwork into the local project `public/` directory (`public/aniruddh-profile.jpg`, `public/journey-*.jpg`, `public/Aniruddh Paralikar - AI Transformation CoE.docx`).
-  - Reference all public assets using relative paths (`./journey-foundations.jpg`, `./aniruddh-profile.jpg`) across components and data files.
+  - Move ALL images, CV documents, and artwork into the local project `public/` directory (`public/aniruddh-profile.jpg`, `public/journey-era*.png`, `public/Aniruddh Paralikar - AI Transformation CoE.docx`).
+  - Reference all public assets using relative paths (`./journey-era1.png`, `./aniruddh-profile.jpg`) across components and data files.
   - Include `.nojekyll` in `public/` so GitHub Pages build engines do not ignore files or directories.
   - Set `base: './'` in `vite.config.ts` for relative asset bundle resolution.
 
