@@ -29,6 +29,11 @@ export const HomeView: React.FC<HomeViewProps> = ({
           {/* Hero Narrative */}
           <div className="lg:col-span-8 space-y-6">
 
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded bg-[#B3402E]/10 border border-[#B3402E]/30 text-[#B3402E] text-xs font-mono font-semibold tracking-wider uppercase">
+              <Sparkles className="w-3.5 h-3.5" />
+              <span>2027-Ready Enterprise AI Portfolio • 16+ Years Experience</span>
+            </div>
+
             <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-medium tracking-tight text-[#1A1D1B] leading-[1.12]">
               Architecting Enterprise AI Platforms with Rigor, Governance & Purpose
             </h1>

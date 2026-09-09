@@ -1,6 +1,6 @@
-# Aniruddh Paralikar — Enterprise AI Transformation Leader & Architect
+# Aniruddh Paralikar — 2027-Ready Enterprise AI Transformation Leader & Architect
 
-Executive architecture portfolio detailing enterprise AI platforms, multi-agent orchestration systems, governed RAG architectures, and AI Centers of Excellence (CoE) operating models.
+2027-ready executive architecture portfolio detailing enterprise AI platforms, multi-agent orchestration systems, governed RAG architectures, and AI Centers of Excellence (CoE) operating models.
 
 ## Overview & Core Capabilities
 

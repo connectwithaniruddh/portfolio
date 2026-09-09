@@ -1,4 +1,4 @@
-# Enterprise AI Portfolio - Master Case Study Collection
+# 2027-Ready Enterprise AI Portfolio - Master Case Study Collection
 
 **Author:** Aniruddh Paralikar - Enterprise AI Transformation Leader | GenAI Solution Architect | AI & Data CoE Leader  
 **Document Status:** Executive Content  

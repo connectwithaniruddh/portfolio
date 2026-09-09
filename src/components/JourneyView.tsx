@@ -177,8 +177,8 @@ export const JourneyView: React.FC = () => {
               <tr className="border-b border-[#DCD9D1] bg-[#EFECE6] font-mono uppercase text-[#707A73]">
                 <th className="p-4 font-semibold w-1/4">Strategic Dimension</th>
                 <th className="p-4 font-semibold w-1/4">The Past (2010 - 2024)</th>
-                <th className="p-4 font-semibold w-1/4 text-[#B3402E]">The Present (2024 - 2026)</th>
-                <th className="p-4 font-semibold w-1/4 text-[#1A1D1B]">The Future Horizon</th>
+                <th className="p-4 font-semibold w-1/4 text-[#B3402E]">2026 — 2027 Ready Present</th>
+                <th className="p-4 font-semibold w-1/4 text-[#1A1D1B]">The 2027+ Horizon</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-[#DCD9D1]">

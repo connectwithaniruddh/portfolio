@@ -902,7 +902,7 @@ export const JOURNEY_ERAS: JourneyEra[] = [
     imageAlt: 'Watercolor artwork representing automation to platforms — majestic mountain summits and interconnected waterways'
   },
   {
-    period: '2026 — PRESENT',
+    period: '2026 — 2027 READY',
     eraTag: 'TRANSFORMATION LEADERSHIP',
     title: 'Enterprise AI Transformation Program Leader',
     badges: [
@@ -921,7 +921,7 @@ export const JOURNEY_ERAS: JourneyEra[] = [
     imageAlt: 'Watercolor artwork representing transformation leadership — dawn over vast landscape with ascending light rays'
   },
   {
-    period: 'FUTURE HORIZON',
+    period: '2027+ HORIZON',
     eraTag: 'THE HORIZON',
     title: 'Value Realization & Strategic Autonomous Systems',
     badges: [
