@@ -861,7 +861,7 @@ export const JOURNEY_ERAS: JourneyEra[] = [
       title: 'Global Enterprise Implementation & Delivery',
       detail: 'Delivered end-to-end LMS, GxP 21 CFR Part 11 audit compliance, and data integration platforms across 100K+ employee enterprise environments.'
     },
-    imageSrc: './journey-foundations.jpg',
+    imageSrc: './journey-foundations.svg',
     imageAlt: 'Fantasy watercolor painting of a young golden-feathered chick Phoenix taking its first flight from an ancient mountain nest into dawn mists'
   },
   {
@@ -879,7 +879,7 @@ export const JOURNEY_ERAS: JourneyEra[] = [
       title: 'Center of Excellence & AI Platform Inception',
       detail: 'Pioneered SensAI RAG solution, created cross-functional architecture review boards, and established reusable automation opportunity pipelines.'
     },
-    imageSrc: './journey-capability.jpg',
+    imageSrc: './journey-capability.svg',
     imageAlt: 'Fantasy watercolor painting of a growing fantasy bird soaring across deep emerald canyons and floating sky islands'
   },
   {
@@ -896,7 +896,7 @@ export const JOURNEY_ERAS: JourneyEra[] = [
       title: 'Agentic Platform & Multi-Domain Adoption',
       detail: 'Standardized agent lifecycle governance across 40+ project teams, cutting time-to-production by 70% with 100% auditability.'
     },
-    imageSrc: './journey-platforms.jpg',
+    imageSrc: './journey-platforms.svg',
     imageAlt: 'Fantasy watercolor painting of a fully-fledged majestic Solar Eagle / Simurgh flying high above mountain summits and starry constellations'
   },
   {
@@ -913,7 +913,7 @@ export const JOURNEY_ERAS: JourneyEra[] = [
       title: 'Strategic Portfolio Ownership & CoE Operating Model',
       detail: 'Leading end-to-end AI portfolio strategy, intake prioritization, executive decision-rights frameworks, and cross-enterprise adoption programs.'
     },
-    imageSrc: './journey-leadership.jpg',
+    imageSrc: './journey-leadership.svg',
     imageAlt: 'Fantasy watercolor painting of a celestial Phoenix soaring triumphantly across a radiant sunrise sky above a sprawling landscape'
   },
   {
@@ -923,7 +923,7 @@ export const JOURNEY_ERAS: JourneyEra[] = [
     badges: [],
     description: 'Aspirations to help solve complex business problems with AI and Automation, creating self-optimizing business operations and driving net-new capability realization.',
     carryForward: 'Unwavering commitment to architectural integrity, human accountability, and solving complex business problems with AI and Automation.',
-    imageSrc: './journey-horizon.jpg',
+    imageSrc: './journey-horizon.svg',
     imageAlt: 'Fantasy watercolor painting of a majestic flying dragon perched serenely on a mountain peak looking at a hilltop temple in the clouds',
     isFuture: true
   }
