@@ -6,8 +6,8 @@ This document serves as the authoritative knowledge base and workspace guideline
 
 ## Executive Summary & System Overview
 
-- **Owner & Persona**: Aniruddh Paralikar — Enterprise AI Transformation Program Leader, Chief AI Architect & Center of Excellence (CoE) Leader.
-- **Core Value Proposition**: Demonstrating 16+ years of software engineering discipline combined with 2027-ready multi-agent platform orchestration, deterministic RAG retrieval, Microsoft Foundry infrastructure, and C-suite portfolio governance.
+- **Owner & Persona**: Aniruddh Paralikar — AI Transformation Architect & Enterprise AI CoE Leader.
+- **Core Value Proposition**: 16+ years of experience spanning developer roles, enterprise consulting, customer-facing professional services, solution architecture, and AI Center of Excellence leadership.
 - **Live URL**: `https://connectwithaniruddh.github.io/portfolio/`
 - **GitHub Repository**: `https://github.com/connectwithaniruddh/portfolio.git`
 

@@ -156,53 +156,6 @@ export const JourneyView: React.FC = () => {
 
       </div>
 
-      {/* Synthesis Matrix: What Connects Past, Present, and Future */}
-      <div className="pt-12 border-t border-[#D1D1CB] space-y-6">
-        <div className="space-y-2">
-          <div className="text-xs font-mono tracking-widest text-[#B3402E] uppercase font-semibold">
-            Synthesis & Continuum
-          </div>
-          <h2 className="font-serif text-3xl sm:text-4xl font-medium tracking-tight text-[#1A1D1B]">
-            What Connects Past, Present, and Future
-          </h2>
-          <p className="text-sm text-[#57615a] max-w-2xl">
-            A cohesive architectural thread linking decade-long delivery discipline with cutting-edge agentic transformation.
-          </p>
-        </div>
-
-        {/* Comparison Matrix Table */}
-        <div className="overflow-x-auto rounded-xl border border-[#DCD9D1] bg-[#F2F0EA] shadow-2xs">
-          <table className="w-full text-left border-collapse text-xs font-sans">
-            <thead>
-              <tr className="border-b border-[#DCD9D1] bg-[#EFECE6] font-mono uppercase text-[#707A73]">
-                <th className="p-4 font-semibold w-1/4">Strategic Dimension</th>
-                <th className="p-4 font-semibold w-1/4">The Past (2010 - 2024)</th>
-                <th className="p-4 font-semibold w-1/4 text-[#B3402E]">2026 — 2027 Ready Present</th>
-                <th className="p-4 font-semibold w-1/4 text-[#1A1D1B]">The 2027+ Horizon</th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-[#DCD9D1]">
-              {matrixThemes.map((theme, idx) => (
-                <tr key={idx} className="hover:bg-[#EAE7DF]/70 transition-colors">
-                  <td className="p-4 font-mono font-semibold text-[#1A1D1B] bg-[#EAE7DF]/40">
-                    {theme.dimension}
-                  </td>
-                  <td className="p-4 text-[#57615a] leading-relaxed">
-                    {theme.past}
-                  </td>
-                  <td className="p-4 text-[#1A1D1B] font-medium leading-relaxed bg-[#f8edea]/40">
-                    {theme.present}
-                  </td>
-                  <td className="p-4 text-[#57615a] leading-relaxed">
-                    {theme.future}
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </div>
-
     </div>
   );
 };

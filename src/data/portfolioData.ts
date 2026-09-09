@@ -848,69 +848,65 @@ export const JOURNEY_ERAS: JourneyEra[] = [
   {
     period: '2010 — 2018',
     eraTag: 'FOUNDATIONS',
-    title: 'Engineering & Implementation',
+    title: 'Senior Software Engineer & Implementation Consultant',
     badges: [
       { label: 'Aon Hewitt', variant: 'default' },
       { label: 'Capgemini', variant: 'default' },
-      { label: 'SumTotal', variant: 'default' }
+      { label: 'SumTotal Systems', variant: 'default' }
     ],
-    description: 'Led large-scale engineering delivery and enterprise system implementations across global financial and HCM systems. Built high-throughput data pipelines, microservice architectures, and mastered complex transactional integrity in mission-critical environments.',
-    carryForward: 'Core engineering discipline: strict data validation, deterministic state management, performance profiling, and production resilience that now grounds every AI platform architecture.',
+    description: 'Operated across customer regions in India, Europe, South Asia, and Australia. Delivered solutions across Government, Public Sector, Pharmaceutical & Healthcare, Technology Services, Automobile, and Banking sectors for HR Services (Hire-to-Retire, Learning Management, Employee Data, Training Services). Architected reporting engines, integrations with loosely coupled enterprise systems, new software implementations, system upgrades, on-premise server management, and real-time training synchronization.',
+    carryForward: 'Technologies & Methodologies Learnt: Windows, Linux, Java, VBScript, Oracle, SQL Server, SSRS, SSIS, PRINCE2 Practitioner, Six Sigma Yellow Belt.',
     evidenceCard: {
       icon: 'layers',
-      title: 'Global Delivery & Architecture Leadership',
-      detail: 'Architected distributed financial reconciliation and workforce platforms processing millions of daily transactions with 99.99% uptime.'
+      title: 'Global Enterprise Implementation & Delivery',
+      detail: 'Delivered end-to-end LMS, GxP 21 CFR Part 11 audit compliance, and data integration platforms across 100K+ employee enterprise environments.'
     },
     imageSrc: './journey-foundations.jpg',
-    imageAlt: 'Watercolor artwork representing early engineering foundations — expansive open fields and sunrise horizon'
+    imageAlt: 'Fantasy watercolor painting of a young golden-feathered chick Phoenix taking its first flight from an ancient mountain nest into dawn mists'
   },
   {
     period: '2018 — 2024',
     eraTag: 'CAPABILITY BUILDING',
-    title: 'Solution Architecture & CoE Leadership',
+    title: 'Senior Solution Architect & Solution CoE Leader',
     badges: [
       { label: 'Zenoti', variant: 'default' },
-      { label: 'SensAI Foundation', variant: 'highlight' }
+      { label: 'Ensono', variant: 'default' }
     ],
-    description: 'Directed cloud-scale solution architecture and established early AI Centers of Excellence. Built specialized semantic search, machine learning prediction models, and enterprise knowledge indexing frameworks for enterprise SaaS and business systems.',
-    carryForward: 'The transition from standalone software to intelligent data platforms, establishing repeatable architecture patterns, modular service boundaries, and cross-functional team enablement.',
+    description: 'Operated across customer regions in the United States for IT-Enabled Services, Infrastructure landscape setup, customer onboarding, and customer experience. Established Center of Excellence and Innovation, automated data bridges, and spearheaded ServiceNow and Ansible IT automation. Built SensAI — an Azure OpenAI RAG-based chatbot platform that streamlined customer onboarding solutioning standards, saving 1,300+ hours monthly.',
+    carryForward: 'Architectural foundation: Automated customer onboarding, data bridge integration, IT service orchestration, and operational RAG chatbots.',
     evidenceCard: {
       icon: 'cpu',
       title: 'Center of Excellence & AI Platform Inception',
-      detail: 'Pioneered early semantic retrieval architectures, created cross-functional architecture review boards, and trained 100+ engineers in AI development best practices.'
+      detail: 'Pioneered SensAI RAG solution, created cross-functional architecture review boards, and established reusable automation opportunity pipelines.'
     },
     imageSrc: './journey-capability.jpg',
-    imageAlt: 'Watercolor artwork representing capability building — spanning bridges across deep canyons and architectural structures'
+    imageAlt: 'Fantasy watercolor painting of a growing fantasy bird soaring across deep emerald canyons and floating sky islands'
   },
   {
     period: '2024 — 2026',
     eraTag: 'AUTOMATION TO PLATFORMS',
-    title: 'Agentic Platforms & Reusability',
+    title: 'AI CoE Lead & Senior Manager, Data & AI',
     badges: [
-      { label: 'Ensono', variant: 'default' },
-      { label: 'Capgemini', variant: 'default' },
-      { label: 'Agentic Studio', variant: 'accent' }
+      { label: 'Capgemini', variant: 'default' }
     ],
-    description: 'Architected enterprise generative AI platforms, multi-agent orchestration frameworks (Agentic Studio), and governed knowledge retrieval engines across audit, insurance, finance, and engineering drawing domains. Moved organizations from fragile point-scripts to resilient, composable platforms.',
+    description: 'Operated across customer regions in the United States and Europe. Directed GenAI solution architecture and CoE governance across Public Sector, Legal, Healthcare, Automobile, and Technology Services domains. Architected the Agentic Experience Platform, leading 120+ reusable AI agents and 15+ deployable GenAI assets across legal, life sciences, and enterprise operations.',
     carryForward: 'Architectural blueprints for governed agent swarms, deterministic verification layers, model-agnostic routing, and enterprise-grade telemetry.',
     evidenceCard: {
       icon: 'sparkles',
-      title: 'Agentic Studio & Multi-Domain Adoption',
+      title: 'Agentic Platform & Multi-Domain Adoption',
       detail: 'Standardized agent lifecycle governance across 40+ project teams, cutting time-to-production by 70% with 100% auditability.'
     },
     imageSrc: './journey-platforms.jpg',
-    imageAlt: 'Watercolor artwork representing automation to platforms — majestic mountain summits and interconnected waterways'
+    imageAlt: 'Fantasy watercolor painting of a fully-fledged majestic Solar Eagle / Simurgh flying high above mountain summits and starry constellations'
   },
   {
-    period: '2026 — 2027 READY',
+    period: '2026 — PRESENT',
     eraTag: 'TRANSFORMATION LEADERSHIP',
-    title: 'Enterprise AI Transformation Program Leader',
+    title: 'AI Transformation Architect',
     badges: [
-      { label: 'Executive Advisory', variant: 'highlight' },
-      { label: 'AI Strategy & CoE', variant: 'accent' },
-      { label: 'Architecture Governance', variant: 'sage' }
+      { label: 'alliantgroup', variant: 'accent' }
     ],
-    description: 'Partnering with C-suite leadership to define AI transformation roadmaps, design sustainable operating models, establish risk-tiered governance frameworks, and bridge the divide between strategic business objectives and high-velocity engineering execution.',
+    description: 'Lead the AI & Data Center of Excellence (CoE) at alliantgroup, defining enterprise AI strategy, governance, operating models, architecture standards, reusable assets, and adoption playbooks aligned with transformation priorities. Advise executives and domain leaders on Azure AI and GenAI roadmaps while serving on the Architecture Review Board. Direct transformation use cases across audit, FP&A, Order-to-Cash (O2C), Procure-to-Pay (P2P), and Record-to-Report (R2R), including invoice and vendor validation, terms recognition, tax and cover-sheet preparation, anomaly detection, and timesheet integration. Design and scale Microsoft Fabric data agents, Salesforce chatbots, Copilot Studio agents, and Azure AI Foundry agents with full observability, information tracing, and responsible-AI controls.',
     carryForward: 'Holistic leadership integrating organizational change, financial ROI measurement, architectural rigor, and enterprise risk mitigation.',
     evidenceCard: {
       icon: 'shield-check',
@@ -918,20 +914,17 @@ export const JOURNEY_ERAS: JourneyEra[] = [
       detail: 'Leading end-to-end AI portfolio strategy, intake prioritization, executive decision-rights frameworks, and cross-enterprise adoption programs.'
     },
     imageSrc: './journey-leadership.jpg',
-    imageAlt: 'Watercolor artwork representing transformation leadership — dawn over vast landscape with ascending light rays'
+    imageAlt: 'Fantasy watercolor painting of a celestial Phoenix soaring triumphantly across a radiant sunrise sky above a sprawling landscape'
   },
   {
-    period: '2027+ HORIZON',
+    period: 'FUTURE HORIZON',
     eraTag: 'THE HORIZON',
-    title: 'Value Realization & Strategic Autonomous Systems',
-    badges: [
-      { label: 'Autonomous Enterprise Systems', variant: 'default' },
-      { label: 'Strategic AI Capital Allocation', variant: 'accent' }
-    ],
-    description: 'Advancing enterprise architectures toward self-optimizing business operations, real-time agentic collaboration across enterprise boundaries, and strategic AI portfolio governance that measures value in tangible margin expansion and competitive differentiation.',
-    carryForward: 'Unwavering commitment to architectural integrity, human accountability, and scalable engineering craftsmanship.',
+    title: 'Strategic Autonomous Systems & Value Realization',
+    badges: [],
+    description: 'Aspirations to help solve complex business problems with AI and Automation, creating self-optimizing business operations and driving net-new capability realization.',
+    carryForward: 'Unwavering commitment to architectural integrity, human accountability, and solving complex business problems with AI and Automation.',
     imageSrc: './journey-horizon.jpg',
-    imageAlt: 'Watercolor artwork representing future horizons of intelligence',
+    imageAlt: 'Fantasy watercolor painting of a majestic flying dragon perched serenely on a mountain peak looking at a hilltop temple in the clouds',
     isFuture: true
   }
 ];

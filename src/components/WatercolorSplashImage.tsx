@@ -207,7 +207,7 @@ export const WatercolorSplashImage: React.FC<WatercolorSplashImageProps> = ({
       onMouseMove={handleMouseMove}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className={`relative w-full aspect-[4/3] rounded-lg overflow-hidden border border-[#DCD9D1] bg-[#F2F0EA] group shadow-xs transition-all duration-300 ${className}`}
+      className={`relative w-full aspect-square rounded-2xl overflow-hidden border border-[#DCD9D1] bg-[#F2F0EA] group shadow-sm transition-all duration-300 ${className}`}
     >
       {/* 1. Base Archival Watercolor Layer */}
       <img
