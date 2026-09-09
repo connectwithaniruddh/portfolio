@@ -221,9 +221,9 @@ export const HomeView: React.FC<HomeViewProps> = ({
             </div>
           </div>
 
-          <div className="lg:col-span-5">
+          <div className="lg:col-span-5 flex justify-center lg:justify-end lg:pr-3">
             <div 
-              className="cursor-pointer"
+              className="w-[70%] max-w-xs sm:max-w-sm cursor-pointer"
               onClick={() => setActiveTab('journey')}
             >
               <WatercolorSplashImage
