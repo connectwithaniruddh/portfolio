@@ -9,7 +9,15 @@ export const getAnimalSvgUri = (type: string): string => {
   const normalized = type.toLowerCase().trim();
   const key = ANIMAL_ALIASES[normalized] || normalized;
   const rawSvg = ANIMAL_SVGS[key] || ANIMAL_SVGS['lion'];
-  return `data:image/svg+xml;utf8,${encodeURIComponent(rawSvg)}`;
+  const enhancedSvg = rawSvg.includes('shape-rendering')
+    ? rawSvg
+    : rawSvg.replace('<svg ', '<svg width="1600" height="1600" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" ');
+
+  const base64 = typeof window !== 'undefined' && window.btoa
+    ? window.btoa(unescape(encodeURIComponent(enhancedSvg)))
+    : Buffer.from(enhancedSvg).toString('base64');
+
+  return `data:image/svg+xml;base64,${base64}`;
 };
 
 export const CASE_STUDIES: CaseStudy[] = [

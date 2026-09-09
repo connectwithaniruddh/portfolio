@@ -12,7 +12,15 @@ const getSvgDataUri = (animalType: string, fallbackSrc: string): string => {
   const key = ANIMAL_ALIASES[normalized] || normalized;
   const rawSvg = ANIMAL_SVGS[key] || (fallbackSrc && fallbackSrc.startsWith('data:image/svg+xml') ? null : ANIMAL_SVGS['lion']);
   if (rawSvg) {
-    return `data:image/svg+xml;utf8,${encodeURIComponent(rawSvg)}`;
+    const enhancedSvg = rawSvg.includes('shape-rendering')
+      ? rawSvg
+      : rawSvg.replace('<svg ', '<svg width="1600" height="1600" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" ');
+
+    const base64 = typeof window !== 'undefined' && window.btoa
+      ? window.btoa(unescape(encodeURIComponent(enhancedSvg)))
+      : Buffer.from(enhancedSvg).toString('base64');
+
+    return `data:image/svg+xml;base64,${base64}`;
   }
   return fallbackSrc;
 };
@@ -163,8 +171,14 @@ export const DynamicLightingArtifact: React.FC<DynamicLightingArtifactProps> = (
             src={displaySrc}
             alt={altText}
             referrerPolicy="no-referrer"
-            className="w-full h-full object-contain pointer-events-none transition-transform duration-300"
-            loading="lazy"
+            className="w-full h-full object-contain pointer-events-none transition-transform duration-300 transform-gpu"
+            style={{
+              imageRendering: '-webkit-optimize-contrast',
+              WebkitBackfaceVisibility: 'hidden',
+              backfaceVisibility: 'hidden',
+              transform: 'translateZ(0)'
+            }}
+            loading="eager"
           />
 
           {/* Dynamic Facet Specular Glare (Sharper glint across the origami planes) */}
