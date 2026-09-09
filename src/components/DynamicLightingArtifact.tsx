@@ -7,22 +7,31 @@ const ANIMAL_ALIASES: Record<string, string> = {
   stag: 'reindeer',
 };
 
-const getSvgDataUri = (animalType: string, fallbackSrc: string): string => {
+const getSvgContent = (animalType: string, fallbackSrc: string): { isSvg: boolean; content: string } => {
   const normalized = animalType ? animalType.toLowerCase().trim() : '';
   const key = ANIMAL_ALIASES[normalized] || normalized;
-  const rawSvg = ANIMAL_SVGS[key] || (fallbackSrc && fallbackSrc.startsWith('data:image/svg+xml') ? null : ANIMAL_SVGS['lion']);
-  if (rawSvg) {
-    const enhancedSvg = rawSvg.includes('shape-rendering')
-      ? rawSvg
-      : rawSvg.replace('<svg ', '<svg width="1600" height="1600" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" ');
+  let rawSvg = ANIMAL_SVGS[key];
 
-    const base64 = typeof window !== 'undefined' && window.btoa
-      ? window.btoa(unescape(encodeURIComponent(enhancedSvg)))
-      : Buffer.from(enhancedSvg).toString('base64');
-
-    return `data:image/svg+xml;base64,${base64}`;
+  if (!rawSvg && fallbackSrc && fallbackSrc.startsWith('data:image/svg+xml')) {
+    try {
+      if (fallbackSrc.includes('base64,')) {
+        const b64 = fallbackSrc.split('base64,')[1];
+        rawSvg = typeof window !== 'undefined' && window.atob ? window.atob(b64) : Buffer.from(b64, 'base64').toString('utf8');
+      } else {
+        rawSvg = decodeURIComponent(fallbackSrc.split('utf8,')[1] || fallbackSrc);
+      }
+    } catch {
+      rawSvg = ANIMAL_SVGS['lion'];
+    }
   }
-  return fallbackSrc;
+
+  if (rawSvg) {
+    const cleanSvg = rawSvg
+      .replace(/<svg\s+/, '<svg width="100%" height="100%" preserveAspectRatio="xMidYMid meet" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" ');
+    return { isSvg: true, content: cleanSvg };
+  }
+
+  return { isSvg: false, content: fallbackSrc };
 };
 
 interface DynamicLightingArtifactProps {
@@ -45,7 +54,7 @@ export const DynamicLightingArtifact: React.FC<DynamicLightingArtifactProps> = (
   const containerRef = useRef<HTMLDivElement>(null);
   const [isHovered, setIsHovered] = useState(false);
 
-  const displaySrc = useMemo(() => getSvgDataUri(animalType, imageSrc), [animalType, imageSrc]);
+  const svgData = useMemo(() => getSvgContent(animalType, imageSrc), [animalType, imageSrc]);
 
   // Raw normalized mouse coordinates (-1 to 1)
   const mouseX = useMotionValue(0);
@@ -133,7 +142,7 @@ export const DynamicLightingArtifact: React.FC<DynamicLightingArtifactProps> = (
       <motion.div
         className="absolute bottom-4 left-1/2 -translate-x-1/2 w-3/5 h-6 rounded-full pointer-events-none"
         style={{
-          background: 'radial-gradient(ellipse at center, rgba(179, 64, 46, 0.32) 0%, rgba(26, 29, 27, 0.22) 40%, transparent 70%)',
+          background: 'radial-gradient(ellipse at center, rgba(179, 64, 46, 0.35) 0%, rgba(26, 29, 27, 0.25) 40%, transparent 70%)',
           x: shadowX,
           y: shadowY,
           scale: shadowScale,
@@ -158,28 +167,21 @@ export const DynamicLightingArtifact: React.FC<DynamicLightingArtifactProps> = (
         }}
         transition={{ type: 'spring', stiffness: 280, damping: 22 }}
       >
-        {/* Dynamic Multi-layered Drop Shadow */}
-        <motion.div
-          className="relative w-full h-full flex items-center justify-center"
-          style={{
-            filter: isHovered 
-              ? 'drop-shadow(0 10px 20px rgba(179, 64, 46, 0.32)) drop-shadow(0 4px 10px rgba(26, 29, 27, 0.28))'
-              : 'drop-shadow(0 5px 12px rgba(26, 29, 27, 0.20))'
-          }}
-        >
-          <img
-            src={displaySrc}
-            alt={altText}
-            referrerPolicy="no-referrer"
-            className="w-full h-full object-contain pointer-events-none transition-transform duration-300 transform-gpu"
-            style={{
-              imageRendering: '-webkit-optimize-contrast',
-              WebkitBackfaceVisibility: 'hidden',
-              backfaceVisibility: 'hidden',
-              transform: 'translateZ(0)'
-            }}
-            loading="eager"
-          />
+        <div className="relative w-full h-full flex items-center justify-center">
+          {svgData.isSvg ? (
+            <div
+              className="w-full h-full flex items-center justify-center pointer-events-none [&>svg]:w-full [&>svg]:h-full [&>svg]:max-w-full [&>svg]:max-h-full [&>svg]:object-contain"
+              dangerouslySetInnerHTML={{ __html: svgData.content }}
+            />
+          ) : (
+            <img
+              src={svgData.content}
+              alt={altText}
+              referrerPolicy="no-referrer"
+              className="w-full h-full object-contain pointer-events-none"
+              loading="eager"
+            />
+          )}
 
           {/* Dynamic Facet Specular Glare (Sharper glint across the origami planes) */}
           <motion.div
@@ -204,7 +206,7 @@ export const DynamicLightingArtifact: React.FC<DynamicLightingArtifactProps> = (
               opacity: isHovered ? 0.70 : 0
             }}
           />
-        </motion.div>
+        </div>
       </motion.div>
     </div>
   );
