@@ -853,7 +853,7 @@ export const JOURNEY_ERAS: JourneyEra[] = [
       title: 'Global Delivery & Architecture Leadership',
       detail: 'Architected distributed financial reconciliation and workforce platforms processing millions of daily transactions with 99.99% uptime.'
     },
-    imageSrc: 'https://lh3.googleusercontent.com/aida/AEtjO1WYnCFGGCJjgqBREbMpjmAfIaVM_qK7DWbfCL1s7krXo34dXiU6yWRZksRLnrkHAou3Gkn_biC33l0-RWPwgjANotMIyROO_ehTIwSatWBkqOmLHaFy3nVHH9SPs4hoyAQciFAcTLQ3R9-yntvfjq8K3lZn2tULfSmMBshPOt_4K7Uu8cIfAKS2fm3RWQAgVnrbYoRTPy2-k5JcDxdNbuNmQFpwozOvdtLYPL1p_qRKXRvVRIGToF_5B0g',
+    imageSrc: './journey-foundations.jpg',
     imageAlt: 'Watercolor artwork representing early engineering foundations — expansive open fields and sunrise horizon'
   },
   {
@@ -871,7 +871,7 @@ export const JOURNEY_ERAS: JourneyEra[] = [
       title: 'Center of Excellence & AI Platform Inception',
       detail: 'Pioneered early semantic retrieval architectures, created cross-functional architecture review boards, and trained 100+ engineers in AI development best practices.'
     },
-    imageSrc: 'https://lh3.googleusercontent.com/aida/AEtjO1XJ-3SqzfzPBW_Ep_dXCFyvpAZvfsu-oJ7krIAeartSXkAoohi8GHjcWAEKxtHxI0VYPzaP51OCUt7pPwHb84UalRjbLXnCbtqf5q8KDOutuoYMF9pKy0hH-k3WO1QBuWh4A4RKSJ2Tik8KPGaN-eAnQFHJxrv-CVql9xkcUh2tY2fk_Q2o64KbVigFGslNM5mugRgRHLyQ99VCgLApTTDeee9mR-H84vP-nWLDcsh4MzUXIXnc7CLHBf8',
+    imageSrc: './journey-capability.jpg',
     imageAlt: 'Watercolor artwork representing capability building — spanning bridges across deep canyons and architectural structures'
   },
   {
@@ -890,7 +890,7 @@ export const JOURNEY_ERAS: JourneyEra[] = [
       title: 'Agentic Studio & Multi-Domain Adoption',
       detail: 'Standardized agent lifecycle governance across 40+ project teams, cutting time-to-production by 70% with 100% auditability.'
     },
-    imageSrc: 'https://lh3.googleusercontent.com/aida/AEtjO1V71RKa5GaU0m8GDcJSyPFiEchMh-Md6QAyUW7iiqe4NPWspLk1h8pKA7Re_Y7Ub9HjkKvU-2vjTiVSNoGcFxux56pAjhW_r5Hby82OBWvcP0-wfeUvDSOD3izbTOB9CIslrItbVcetIZUYORc9LbCklKIVaveOncdifrSTyq9ukFuXR5OEr9xdyTbvf4kJ-Kagf3z3QNh7OV9XwlI54Hta3Mc3MAg1p_iS0aEDbHTnT-2waIj_Ml_V9aI',
+    imageSrc: './journey-platforms.jpg',
     imageAlt: 'Watercolor artwork representing automation to platforms — majestic mountain summits and interconnected waterways'
   },
   {
@@ -909,7 +909,7 @@ export const JOURNEY_ERAS: JourneyEra[] = [
       title: 'Strategic Portfolio Ownership & CoE Operating Model',
       detail: 'Leading end-to-end AI portfolio strategy, intake prioritization, executive decision-rights frameworks, and cross-enterprise adoption programs.'
     },
-    imageSrc: 'https://lh3.googleusercontent.com/aida/AEtjO1WNkDsQbQTN7RDnE03igNONXISt0rjvnAu9wYN0VgGUXkZF8K4VfBNeUS2OZQlXdQ8NWrfhzzMpx0ktycaGhqfEBvTIGhwkkDQRGy8XN0tx2wV7EozSLGywooBLSWaMp9kc_dGq39a0SwRDudIz54cjHAId24DGpNVCp-O-lNMgLXV9tmB_vBp468-Pt0c8CaeRU6WJqBalepUdmkO5lYG4MHXl9teFyTAeobLyCq_MM3pGArloN_kDBjE',
+    imageSrc: './journey-leadership.jpg',
     imageAlt: 'Watercolor artwork representing transformation leadership — dawn over vast landscape with ascending light rays'
   },
   {
@@ -922,7 +922,7 @@ export const JOURNEY_ERAS: JourneyEra[] = [
     ],
     description: 'Advancing enterprise architectures toward self-optimizing business operations, real-time agentic collaboration across enterprise boundaries, and strategic AI portfolio governance that measures value in tangible margin expansion and competitive differentiation.',
     carryForward: 'Unwavering commitment to architectural integrity, human accountability, and scalable engineering craftsmanship.',
-    imageSrc: 'https://lh3.googleusercontent.com/aida/AEtjO1WNkDsQbQTN7RDnE03igNONXISt0rjvnAu9wYN0VgGUXkZF8K4VfBNeUS2OZQlXdQ8NWrfhzzMpx0ktycaGhqfEBvTIGhwkkDQRGy8XN0tx2wV7EozSLGywooBLSWaMp9kc_dGq39a0SwRDudIz54cjHAId24DGpNVCp-O-lNMgLXV9tmB_vBp468-Pt0c8CaeRU6WJqBalepUdmkO5lYG4MHXl9teFyTAeobLyCq_MM3pGArloN_kDBjE',
+    imageSrc: './journey-horizon.jpg',
     imageAlt: 'Watercolor artwork representing future horizons of intelligence',
     isFuture: true
   }
