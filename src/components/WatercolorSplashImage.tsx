@@ -207,7 +207,7 @@ export const WatercolorSplashImage: React.FC<WatercolorSplashImageProps> = ({
       onMouseMove={handleMouseMove}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className={`relative w-full aspect-square rounded-2xl overflow-hidden border border-[#DCD9D1] border-r-[3px] border-b-[3px] border-r-[#1A1D1B] border-b-[#1A1D1B] bg-[#F2F0EA] group shadow-[6px_6px_0px_0px_#1A1D1B,9px_9px_18px_rgba(26,29,27,0.16)] transition-all duration-300 hover:shadow-[8px_8px_0px_0px_#1A1D1B,12px_12px_22px_rgba(26,29,27,0.22)] hover:-translate-y-0.5 hover:-translate-x-0.5 ${className}`}
+      className={`relative w-full aspect-square rounded-2xl overflow-hidden border border-[#D5D1C7] bg-[#F2F0EA] group ring-1 ring-white/60 ring-inset shadow-[0_2px_4px_rgba(26,29,27,0.06),0_10px_20px_-3px_rgba(26,29,27,0.12),0_20px_35px_-8px_rgba(26,29,27,0.18)] transition-all duration-300 hover:shadow-[0_4px_8px_rgba(26,29,27,0.08),0_16px_28px_-3px_rgba(26,29,27,0.16),0_28px_48px_-8px_rgba(26,29,27,0.22)] hover:-translate-y-1 ${className}`}
     >
       {/* 1. Base Archival Watercolor Layer */}
       <img
