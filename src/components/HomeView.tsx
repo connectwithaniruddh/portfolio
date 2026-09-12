@@ -20,84 +20,84 @@ export const HomeView: React.FC<HomeViewProps> = ({
   const latestJourney = JOURNEY_ERAS[3]; // Transformation Leadership
 
   return (
-    <div className="space-y-20">
+    <div className="space-y-12 sm:space-y-16">
       
       {/* Hero Section */}
-      <section className="border-b border-[#D1D1CB] pb-12 sm:pb-16 pt-0">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+      <section className="border-b border-[#D1D1CB] pb-8 sm:pb-10 pt-0">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
           
           {/* Hero Narrative */}
-          <div className="lg:col-span-8 space-y-6">
+          <div className="lg:col-span-8 space-y-4 sm:space-y-5">
 
-            <h1 className="font-serif text-3xl sm:text-4xl lg:text-3xl font-medium tracking-tight text-[#1A1D1B] leading-[1.18]">
-              I Build the AI Center of Excellence Enterprises Trust with Production Systems
+            <h1 className="font-serif text-2xl sm:text-3xl lg:text-3xl font-medium tracking-tight text-[#1A1D1B] leading-[1.14]">
+              Architecting Enterprise AI Platforms with Rigor, Governance & Purpose
             </h1>
 
-            <p className="text-base sm:text-lg text-[#57615a] leading-relaxed max-w-2xl">
-              From citizen-prototype to governed Microsoft Foundry deployment: I've architected 120+ reusable agents, $500K in supported MRR, and the deterministic guardrails that make multi-agent AI auditable, not experimental.
+            <p className="text-sm sm:text-base text-[#57615a] leading-relaxed max-w-2xl">
+              I lead enterprise AI transformation programs and architect governed multi-agent systems, deterministic RAG platforms, and AI Centers of Excellence that bridge C-suite strategy with production engineering.
             </p>
 
             {/* Strategic Pillars Summary */}
-            <div className="pt-2 text-xs font-mono text-[#707A73] space-y-1.5 border-t border-[#DCD9D1]">
+            <div className="pt-2 text-xs font-mono text-[#707A73] space-y-1 border-t border-[#DCD9D1]">
               <div className="flex flex-wrap items-center gap-2 text-[#1A1D1B]">
                 <span className="text-[#B3402E] font-bold">CORE FOCUS:</span>
-                <span>AI & Data CoE Leadership · Governed Multi-Agent Systems · Trusted Enterprise Knowledge Retrieval · Enterprise Architecture</span>
+                <span>Agentic Orchestration • Deterministic RAG • CoE Operating Models • Risk Governance</span>
               </div>
             </div>
 
             {/* Primary Action Pathways */}
-            <div className="flex flex-wrap items-center gap-4 pt-4">
+            <div className="flex flex-wrap items-center gap-3 pt-2">
               <button
                 id="hero-explore-work-btn"
                 onClick={() => setActiveTab('work')}
-                className="inline-flex items-center gap-2 px-6 py-3 text-xs font-mono uppercase tracking-wider text-[#F9F7F2] bg-[#1A1D1B] hover:bg-[#B3402E] rounded transition-colors shadow-xs"
+                className="inline-flex items-center gap-2 px-5 py-2.5 text-xs font-mono uppercase tracking-wider text-[#F9F7F2] bg-[#1A1D1B] hover:bg-[#B3402E] rounded transition-colors shadow-xs"
               >
                 <span>EXPLORE MY WORK</span>
-                <ArrowRight className="w-4 h-4" />
+                <ArrowRight className="w-3.5 h-3.5" />
               </button>
 
               <button
                 id="hero-view-journey-btn"
                 onClick={() => setActiveTab('journey')}
-                className="inline-flex items-center gap-2 px-6 py-3 text-xs font-mono uppercase tracking-wider text-[#1A1D1B] bg-[#EFECE6] hover:bg-[#E2DFD8] border border-[#DCD9D1] rounded transition-colors"
+                className="inline-flex items-center gap-2 px-5 py-2.5 text-xs font-mono uppercase tracking-wider text-[#1A1D1B] bg-[#EFECE6] hover:bg-[#E2DFD8] border border-[#DCD9D1] rounded transition-colors"
               >
                 <span>MY JOURNEY & ERAS</span>
-                <Compass className="w-4 h-4 text-[#B3402E]" />
+                <Compass className="w-3.5 h-3.5 text-[#B3402E]" />
               </button>
             </div>
           </div>
 
           {/* Hero Profile Card */}
-          <div className="lg:col-span-4 flex justify-center">
-            <div className="w-full max-w-sm bg-[#EFECE6] rounded-xl border border-[#D1D1CB] p-5 space-y-4 shadow-xs">
-              <div className="relative aspect-[4/5] rounded-lg overflow-hidden border border-[#DCD9D1] bg-[#E2DFD8]">
+          <div className="lg:col-span-4 flex justify-center lg:justify-end">
+            <div className="w-full max-w-[260px] sm:max-w-[280px] bg-[#EFECE6] rounded-xl border border-[#D1D1CB] p-3.5 space-y-2.5 shadow-xs">
+              <div className="relative aspect-[4/4.3] rounded-lg overflow-hidden border border-[#DCD9D1] bg-[#E2DFD8]">
                 <img
                   src="./aniruddh-profile.jpg"
                   alt="Aniruddh Paralikar - AI Transformation Program Leader"
                   className="w-full h-full object-cover opacity-95"
                   loading="eager"
                 />
-                <div className="absolute bottom-3 left-3 right-3 bg-[#1A1D1B]/90 backdrop-blur-xs p-3 rounded text-white border border-white/10">
-                  <div className="font-serif text-lg font-medium">Aniruddh Paralikar</div>
-                  <div className="text-[10px] font-mono text-[#C2C9C4] tracking-wider uppercase">
+                <div className="absolute bottom-2 left-2 right-2 bg-[#1A1D1B]/90 backdrop-blur-xs p-2 rounded text-white border border-white/10">
+                  <div className="font-serif text-sm sm:text-base font-medium">Aniruddh Paralikar</div>
+                  <div className="text-[9px] font-mono text-[#C2C9C4] tracking-wider uppercase">
                     Enterprise AI Leader & CoE Architect
                   </div>
                 </div>
               </div>
 
               {/* Executive Cover Letter & CV Download */}
-              <div className="space-y-3 text-xs font-mono text-[#57615a] pt-1">
-                <p className="text-[11px] leading-relaxed text-[#1A1D1B] font-serif italic border-b border-[#DCD9D1] pb-3">
+              <div className="space-y-2 text-xs font-mono text-[#57615a] pt-0.5">
+                <p className="text-[10.5px] leading-snug text-[#1A1D1B] font-serif italic border-b border-[#DCD9D1] pb-2">
                   "AI transformation leader with 16+ years translating business strategy into governed multi-agent systems, Microsoft Foundry solutions, and scalable CoE operating models."
                 </p>
                 <a
-                  href="./Aniruddh Paralikar - AI Transformation CoE.pdf"
+                  href={`${import.meta.env.BASE_URL}Aniruddh Paralikar - AI Transformation CoE.pdf`}
                   download="Aniruddh Paralikar - AI Transformation CoE.pdf"
-                  className="w-full py-2.5 px-3 rounded text-xs font-mono bg-[#B3402E] hover:bg-[#963323] text-[#F9F7F2] transition-colors flex items-center justify-center gap-2 shadow-xs font-medium uppercase tracking-wider"
+                  className="w-full py-2 px-3 rounded text-[11px] font-mono bg-[#B3402E] hover:bg-[#963323] text-[#F9F7F2] transition-colors flex items-center justify-center gap-1.5 shadow-xs font-medium uppercase tracking-wider"
                 >
-                  <FileText className="w-4 h-4" />
+                  <FileText className="w-3.5 h-3.5" />
                   <span>Download My CV (PDF)</span>
-                  <Download className="w-3.5 h-3.5" />
+                  <Download className="w-3 h-3" />
                 </a>
               </div>
             </div>

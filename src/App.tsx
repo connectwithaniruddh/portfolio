@@ -55,7 +55,7 @@ export default function App() {
       />
 
       {/* Main Content View with Smooth Transition */}
-      <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 pt-4 sm:pt-6 pb-12 sm:pb-16">
+      <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 pt-2 sm:pt-3 pb-12 sm:pb-16">
         <AnimatePresence mode="wait">
           <motion.div
             key={activeTab}
