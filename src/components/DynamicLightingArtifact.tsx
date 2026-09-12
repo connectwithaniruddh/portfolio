@@ -140,7 +140,7 @@ export const DynamicLightingArtifact: React.FC<DynamicLightingArtifactProps> = (
     >
       {/* 1. Organic Ambient Occlusion Ground Shadow on the Canvas */}
       <motion.div
-        className="absolute bottom-4 left-1/2 -translate-x-1/2 w-3/5 h-6 rounded-full pointer-events-none"
+        className="absolute bottom-1 left-1/2 -translate-x-1/2 w-3/5 h-4 rounded-full pointer-events-none"
         style={{
           background: 'radial-gradient(ellipse at center, rgba(179, 64, 46, 0.35) 0%, rgba(26, 29, 27, 0.25) 40%, transparent 70%)',
           x: shadowX,

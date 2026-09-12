@@ -109,7 +109,7 @@ export const Footer: React.FC<FooterProps> = ({ setActiveTab, onOpenConnect }) =
                     download="Aniruddh Paralikar - AI Transformation CoE.pdf"
                     className="text-[#B3402E] hover:text-[#f5dcd8] transition-colors font-semibold"
                   >
-                    DOWNLOAD CV (PDF)
+                    DOWNLOAD CV
                   </a>
                 </li>
                 <li>
