@@ -23,25 +23,25 @@ export const HomeView: React.FC<HomeViewProps> = ({
     <div className="space-y-20">
       
       {/* Hero Section */}
-      <section className="border-b border-[#D1D1CB] pb-16 pt-4">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <section className="border-b border-[#D1D1CB] pb-12 sm:pb-16 pt-0">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
           
           {/* Hero Narrative */}
           <div className="lg:col-span-8 space-y-6">
 
-            <h1 className="font-serif text-4xl sm:text-5xl lg:text-3xl font-medium tracking-tight text-[#1A1D1B] leading-[1.12]">
-              Architecting Enterprise AI Platforms with Rigor, Governance & Purpose
+            <h1 className="font-serif text-3xl sm:text-4xl lg:text-3xl font-medium tracking-tight text-[#1A1D1B] leading-[1.18]">
+              I Build the AI Center of Excellence Enterprises Trust with Production Systems
             </h1>
 
             <p className="text-base sm:text-lg text-[#57615a] leading-relaxed max-w-2xl">
-              I lead enterprise AI transformation programs and architect governed multi-agent systems, deterministic RAG platforms, and AI Centers of Excellence that bridge C-suite strategy with production engineering.
+              From citizen-prototype to governed Microsoft Foundry deployment: I've architected 120+ reusable agents, $500K in supported MRR, and the deterministic guardrails that make multi-agent AI auditable, not experimental.
             </p>
 
             {/* Strategic Pillars Summary */}
             <div className="pt-2 text-xs font-mono text-[#707A73] space-y-1.5 border-t border-[#DCD9D1]">
-              <div className="flex items-center gap-2 text-[#1A1D1B]">
+              <div className="flex flex-wrap items-center gap-2 text-[#1A1D1B]">
                 <span className="text-[#B3402E] font-bold">CORE FOCUS:</span>
-                <span>Agentic Orchestration • Deterministic RAG • CoE Operating Models • Risk Governance</span>
+                <span>AI & Data CoE Leadership · Governed Multi-Agent Systems · Trusted Enterprise Knowledge Retrieval · Enterprise Architecture</span>
               </div>
             </div>
 
@@ -91,12 +91,12 @@ export const HomeView: React.FC<HomeViewProps> = ({
                   "AI transformation leader with 16+ years translating business strategy into governed multi-agent systems, Microsoft Foundry solutions, and scalable CoE operating models."
                 </p>
                 <a
-                  href="./Aniruddh Paralikar - AI Transformation CoE.docx"
-                  download="Aniruddh Paralikar - AI Transformation CoE.docx"
+                  href="./Aniruddh Paralikar - AI Transformation CoE.pdf"
+                  download="Aniruddh Paralikar - AI Transformation CoE.pdf"
                   className="w-full py-2.5 px-3 rounded text-xs font-mono bg-[#B3402E] hover:bg-[#963323] text-[#F9F7F2] transition-colors flex items-center justify-center gap-2 shadow-xs font-medium uppercase tracking-wider"
                 >
                   <FileText className="w-4 h-4" />
-                  <span>Download My CV</span>
+                  <span>Download My CV (PDF)</span>
                   <Download className="w-3.5 h-3.5" />
                 </a>
               </div>

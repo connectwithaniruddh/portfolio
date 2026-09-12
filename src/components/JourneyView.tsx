@@ -48,41 +48,40 @@ export const JourneyView: React.FC = () => {
         </p>
       </div>
 
-      {/* Timeline Section: Image Left, Timeline Line Center, Text Right */}
-      <div className="relative">
-        
-        {/* Continuous Central Architectural Vertical Rule (Desktop) */}
-        <div className="hidden lg:block absolute top-0 bottom-0 left-[45.8%] w-[1.5px] bg-[#D1D1CB]" />
-
-        <div className="space-y-16 lg:space-y-20">
-          {JOURNEY_ERAS.map((era, index) => {
-            return (
-              <div 
-                key={era.eraTag}
-                id={`journey-era-${era.eraTag.toLowerCase().replace(/\s+/g, '-')}`}
-                className="relative grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start"
-              >
-                
-                {/* 1. Left Column: Artwork Image (5 Cols) — 30% smaller square card with 3D shadow */}
-                <div className="lg:col-span-5 flex justify-center lg:justify-end lg:pr-3">
-                  <div className="w-[70%] max-w-xs sm:max-w-sm">
-                    <WatercolorSplashImage
-                      src={era.imageSrc}
-                      alt={era.imageAlt}
-                      period={era.period}
-                    />
-                  </div>
+      {/* Timeline Section: 25% (Photo) - 75% (Timeline & Narrative) Split */}
+      <div className="relative space-y-16 lg:space-y-20">
+        {JOURNEY_ERAS.map((era, index) => {
+          const isLast = index === JOURNEY_ERAS.length - 1;
+          return (
+            <div 
+              key={era.eraTag}
+              id={`journey-era-${era.eraTag.toLowerCase().replace(/\s+/g, '-')}`}
+              className="relative grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-start"
+            >
+              
+              {/* 1. Left Column: Artwork Image (3 Cols = 25%) */}
+              <div className="lg:col-span-3 flex justify-center lg:justify-start">
+                <div className="w-full max-w-[230px] sm:max-w-[250px]">
+                  <WatercolorSplashImage
+                    src={era.imageSrc}
+                    alt={era.imageAlt}
+                    period={era.period}
+                  />
                 </div>
+              </div>
 
-                {/* 2. Middle Timeline Track & Node Marker (1 Col desktop) */}
-                <div className="hidden lg:flex lg:col-span-1 justify-center relative pt-4">
-                  <div className="w-8 h-8 rounded-full bg-[#F9F7F2] border-2 border-[#1A1D1B] flex items-center justify-center text-[11px] font-mono font-bold text-[#B3402E] shadow-xs z-10">
-                    {index + 1}
-                  </div>
+              {/* 2. Middle Timeline Track & Node Marker (1 Col) */}
+              <div className="hidden lg:flex lg:col-span-1 justify-center relative self-stretch">
+                {!isLast && (
+                  <div className="absolute top-6 bottom-[-4.5rem] lg:bottom-[-5.5rem] w-[1.5px] bg-[#D1D1CB]" />
+                )}
+                <div className="w-8 h-8 rounded-full bg-[#F9F7F2] border-2 border-[#1A1D1B] flex items-center justify-center text-[11px] font-mono font-bold text-[#B3402E] shadow-xs z-10 mt-2">
+                  {index + 1}
                 </div>
+              </div>
 
-                {/* 3. Right Column: Executive Narrative & Career Milestones (6 Cols) */}
-                <div className="lg:col-span-6 space-y-4 pt-1">
+              {/* 3. Right Column: Executive Narrative & Milestones (8 Cols -> 1 + 8 = 9 Cols = 75%) */}
+              <div className="lg:col-span-8 space-y-4 pt-1">
                   
                   {/* Period & Era Tag */}
                   <div className="flex flex-wrap items-center gap-2">
@@ -153,8 +152,6 @@ export const JourneyView: React.FC = () => {
             );
           })}
         </div>
-
-      </div>
 
     </div>
   );

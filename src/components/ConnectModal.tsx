@@ -136,12 +136,12 @@ export const ConnectModal: React.FC<ConnectModalProps> = ({ isOpen, onClose }) =
                 AI Transformation CoE Resume
               </div>
               <a
-                href="./Aniruddh Paralikar - AI Transformation CoE.docx"
-                download="Aniruddh Paralikar - AI Transformation CoE.docx"
+                href="./Aniruddh Paralikar - AI Transformation CoE.pdf"
+                download="Aniruddh Paralikar - AI Transformation CoE.pdf"
                 className="w-full py-2 px-3 rounded text-xs font-mono bg-[#B3402E] hover:bg-[#963323] text-[#F9F7F2] transition-colors flex items-center justify-center gap-1.5 shadow-xs"
               >
                 <Download className="w-3.5 h-3.5" />
-                <span>Download My CV</span>
+                <span>Download My CV (PDF)</span>
               </a>
             </div>
 
