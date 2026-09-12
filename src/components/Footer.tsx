@@ -26,12 +26,6 @@ export const Footer: React.FC<FooterProps> = ({ setActiveTab, onOpenConnect }) =
               </h3>
               <span className="w-1.5 h-1.5 rounded-full bg-[#B3402E] mt-1" />
             </div>
-            <p className="text-xs font-mono tracking-widest uppercase text-[#A0AAA3]">
-              Enterprise AI Transformation Leader & Architect
-            </p>
-            <p className="text-xs font-sans text-[#C2C9C4] leading-relaxed max-w-xl">
-              16+ years translating business strategy into governed multi-agent systems, Microsoft Foundry solutions, and scalable AI Centers of Excellence.
-            </p>
             <div className="pt-2 flex flex-wrap items-center gap-4 text-xs font-mono">
               <button
                 onClick={onOpenConnect}

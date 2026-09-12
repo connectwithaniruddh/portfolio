@@ -29,7 +29,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
           {/* Hero Narrative */}
           <div className="lg:col-span-8 space-y-6">
 
-            <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-medium tracking-tight text-[#1A1D1B] leading-[1.12]">
+            <h1 className="font-serif text-4xl sm:text-5xl lg:text-3xl font-medium tracking-tight text-[#1A1D1B] leading-[1.12]">
               Architecting Enterprise AI Platforms with Rigor, Governance & Purpose
             </h1>
 
@@ -241,7 +241,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
       <section className="space-y-6">
         <div className="border-b border-[#D1D1CB] pb-4">
           <div className="text-xs font-mono tracking-widest text-[#B3402E] uppercase font-semibold">
-            Core Beliefs
+            Operating Principles
           </div>
           <h2 className="font-serif text-3xl sm:text-4xl font-medium tracking-tight text-[#1A1D1B]">
             How I Lead AI Transformation

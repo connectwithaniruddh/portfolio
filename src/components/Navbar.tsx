@@ -44,9 +44,6 @@ export const Navbar: React.FC<NavbarProps> = ({
               </span>
               <span className="w-1.5 h-1.5 rounded-full bg-[#B3402E] mt-1 hidden sm:inline-block" />
             </div>
-            <p className="text-[11px] font-mono uppercase tracking-widest text-[#707A73]">
-              AI Transformation Leader & Architect
-            </p>
           </div>
 
           {/* Desktop Navigation Links */}
